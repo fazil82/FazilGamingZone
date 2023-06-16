@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../js"
+		},
+		{
+			"path": "../carsgallery"
+		},
+		{
+			"path": "../fazil"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js"
+	}
+}

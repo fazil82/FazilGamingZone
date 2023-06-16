@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+h2{
+    padding: 3px;
+    border-radius: 5px;
+}
+body{
+    cursor: url('./cursor.png.png'),auto;
+    height: 100vh;
+    background: url(game.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #000;
+}
+.logo{
+    display: flex;
+}
+.logo h2{
+    text-shadow: 10px 5px 10px aqua;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header ul li{
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+header ul li:hover{
+    background: linear-gradient(rgb(255, 102, 235),#1cfbff);
+    color:white;
+}
+header ul li:nth-child(1){
+    border-top: 4px solid rgb(255, 102, 235);
+}
+main{
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+}
+main p{
+    width: 800px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #000;
+    border-radius: 7px;
+    color: azure;
+}
+img{
+    padding-left: 10px;
+}
+h2{
+    font-family: 'Aoboshi One', serif;
+}
+p{
+    font-family: 'Tilt Prism', cursive;
+}
+main button{
+    position:relative;
+    text-align: center;
+    
+    padding: 15px;
+    font-size: 30px;
+    color:grey;
+    font-family: poppins;
+    font-weight: 400;
+    border: 5px solid rgb(255, 102, 235);
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.0s;  
+    animation: scale 1s ease; 
+    animation-iteration-count: 2;
+    animation-delay: 1.2s;
+}
+main button:hover
+{
+    box-shadow: 0 5px 50px 0 rgb(255, 102, 235) inset, 0 5px 50px 0 rgb(255, 102, 235),0 5px 50px 0 rgb(255, 102, 235) inset, 0 5px 50px 0 rgb(255, 102, 235);
+}
+header img{
+    filter: blur();
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@keyframes scale{
+    0%{
+transform: scale(1);
+    }
+    50%{
+transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+            }
+}
